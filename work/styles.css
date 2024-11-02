@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.logo {
+    text-align: center;
+}
+
+.logo-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green background */
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+    color: white; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header input[type="text"],
+header select {
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+header input[type="text"] {
+    width: 200px;
+}
+
+header select {
+    width: 150px;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.book {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+        /* Responsive adjustments */
+@media (max-width: 600px) {
+    header input[type="text"],
+    header select {
+        width: 100%; /* Full width on small screens */
+        margin: 5px 0;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 601px) {
+    header {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
+@media (max-width: 600px) {
+    header input[type="text"],
+    header select {
+        width: 100%;
+        margin: 5px 0;
+    }
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+    
+        header input[type="text"],
+        header select {
+            width: 100%;
+            font-size: 0.9em;
+        }
+    
+        .book {
+            padding: 10px;
+        }
+    
+        .book h2 {
+            font-size: 1.2em;
+        }
+    
+        .book p {
+            font-size: 0.8em;
+        }
+    }
+
+    header {
+        padding: 15px
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .search-result {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .subscribe {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .subscribe input[type="email"] {
+        padding: 10px;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .subscribe button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .subscribe button:hover {
+        background-color: #218838;
+    }
+    .social-media {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .social-media a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+.social-media {
+    margin-top: 20px; /* Space above the social media section */
+}
+
+#social-links {
+    display: flex; /* Use flexbox to align items horizontally */
+    gap: 15px; /* Space between the links */
+}
+
+#social-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4a90e2; /* Link color */
+    padding: 10px 15px; /* Padding around the links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#social-links a:hover {
+    background-color: #e8e8e8; /* Light background on hover */
+}
